@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_marginHorizontal="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/product1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/percentProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/raleway_regular"
+        android:text="ALT -3,87%"
+        android:textColor="#f00909"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageProduct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_black"
+        android:text="ATLANTIA"
+        android:textSize="16sp"
+        android:textColor="#2e2e2e"
+        app:layout_constraintStart_toStartOf="@+id/percentProduct"
+        app:layout_constraintTop_toBottomOf="@+id/percentProduct" />
+
+    <TextView
+        android:id="@+id/timeProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_light"
+        android:text="3 Sept 2020"
+        android:textColor="#080808"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/percentProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toEndOf="@+id/percentProduct"
+        app:layout_constraintTop_toTopOf="@+id/percentProduct"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_light"
+        android:text="Illum velit nam voluptatum enim aut \nratione ratione officiis totam. \nMollitia eum sint tempora ducimus"
+        android:textColor="#000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/nameProduct"
+        app:layout_constraintTop_toBottomOf="@+id/nameProduct"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:src="@drawable/ic_gruppo_di_maschere_1_clipped"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
