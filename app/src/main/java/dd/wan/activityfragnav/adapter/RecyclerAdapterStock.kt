@@ -4,14 +4,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.cardview.widget.CardView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import dd.wan.activityfragnav.R
 import dd.wan.activityfragnav.model.Stock
 
 class RecyclerAdapterStock(var list: ArrayList<Stock>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-
-    private var isFooter = false
 
 
     override fun onCreateViewHolder(
@@ -26,20 +26,21 @@ class RecyclerAdapterStock(var list: ArrayList<Stock>) :
             view = LayoutInflater.from(parent.context).inflate(R.layout.liststock, parent, false)
             return ViewHolder(view)
         }
-
-
     }
 
-//    override fun onBindViewHolder(holder: RecyclerAdapterStock.ViewHolder, position: Int) {
-//
-//    }
+    lateinit var itemClick : (position:Int)->Unit
+
+    fun setCallBack(click:(position:Int)->Unit)
+    {
+        itemClick = click
+    }
 
     override fun getItemViewType(position: Int): Int {
         if (position == list.size) {
-            isFooter = true
+
             return 1
         } else {
-            isFooter = false
+
             return 2
         }
     }
@@ -48,27 +49,35 @@ class RecyclerAdapterStock(var list: ArrayList<Stock>) :
         return list.size + 1
     }
 
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-            var name: TextView = itemView.findViewById(R.id.name)
-            var location: TextView = itemView.findViewById(R.id.location)
-            var time: TextView = itemView.findViewById(R.id.time)
-            var rate: TextView = itemView.findViewById(R.id.rate)
-            var percent: TextView = itemView.findViewById(R.id.percent)
-    }
-
-    inner class FooterViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView)
-    {
-
-    }
-
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (holder is ViewHolder) {
-            holder.name.text = list.get(position).name
-            holder.location.text = list.get(position).location
-            holder.time.text = list.get(position).time
-            holder.rate.text = list.get(position).rate
-            holder.percent.text = list.get(position).percent
+            holder.setData(list.get(position))
         }
+    }
+
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        var name: TextView = itemView.findViewById(R.id.name)
+        var location: TextView = itemView.findViewById(R.id.location)
+        var time: TextView = itemView.findViewById(R.id.time)
+        var rate: TextView = itemView.findViewById(R.id.rate)
+        var percent: TextView = itemView.findViewById(R.id.percent)
+        var constraint:ConstraintLayout = itemView.findViewById(R.id.constraintStock)
+        fun setData(item:Stock)
+        {
+            name.text = item.name
+            location.text = item.location
+            time.text = item.time
+            rate.text = item.rate
+            percent.text = item.percent
+        }
+        init {
+            constraint.setOnClickListener {
+                itemClick.invoke(adapterPosition)
+            }
+        }
+    }
+
+    inner class FooterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     }
 }

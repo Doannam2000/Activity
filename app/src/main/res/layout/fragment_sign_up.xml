@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    tools:context=".fragment.SignUpFragment">
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline12"
         android:layout_width="wrap_content"
@@ -69,13 +70,13 @@
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/guideline12"
         app:layout_constraintVertical_bias="0.58" />
-
     <ImageView
+        android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_coin"
         android:layout_marginStart="5dp"
         android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_coin"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
         app:layout_constraintStart_toEndOf="@+id/textView5" />
     <TextView
@@ -95,7 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/raleway_black"
-        android:text="Welcome!"
+        android:text="Create a free account"
         android:textColor="#656565"
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
@@ -103,7 +104,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/email"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:hint="E-mail"
@@ -111,7 +112,6 @@
         android:textColorHint="#9d9d9d"
         android:fontFamily="@font/lato_light"
         android:background="@drawable/customedittext"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
@@ -119,47 +119,52 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/passw"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:hint="Password"
         android:paddingLeft="25dp"
         android:textColorHint="#9d9d9d"
+        android:inputType="textPassword"
         android:fontFamily="@font/lato_light"
         android:background="@drawable/customedittext"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton2"
+        android:id="@+id/signUp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/gradient"
         android:fontFamily="@font/raleway_black"
-        android:text="Login"
+        android:text="SIGN UP"
         android:layout_marginTop="16dp"
         android:textColor="#fff"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/passw" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/forgotPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lato_light"
         android:text="Forgot Password?"
+
+        android:padding="5dp"
         android:textColor="#9d9d9d"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/signUp" />
     <TextView
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
+        android:padding="5dp"
+        android:text="Login"
         android:textColor="#9d9d9d"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
-        app:layout_constraintTop_toTopOf="@+id/textView7" />
+        app:layout_constraintTop_toTopOf="@+id/forgotPass" />
 </androidx.constraintlayout.widget.ConstraintLayout>

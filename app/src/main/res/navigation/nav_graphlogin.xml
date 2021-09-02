@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graphlogin"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="dd.wan.activityfragnav.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <argument
+            android:name="mail"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="" />
+        <argument
+            android:name="pass"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="dd.wan.activityfragnav.fragment.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmPassChangeFragment"
+        android:name="dd.wan.activityfragnav.fragment.ConfirmPassChangeFragment"
+        android:label="fragment_confirm_pass_change"
+        tools:layout="@layout/fragment_confirm_pass_change" >
+        <action
+            android:id="@+id/action_confirmPassChangeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="dd.wan.activityfragnav.fragment.EmailFragment"
+        android:label="fragment_email"
+        tools:layout="@layout/fragment_email" >
+        <action
+            android:id="@+id/action_emailFragment_to_confirmPassChangeFragment"
+            app:destination="@id/confirmPassChangeFragment" />
+    </fragment>
+</navigation>

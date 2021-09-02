@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    tools:context=".fragment.OnBoardingFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0862" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -32,18 +42,19 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.936" />
 
+
     <TextView
+        android:id="@+id/skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
         android:paddingHorizontal="40dp"
         android:paddingVertical="10dp"
-        android:fontFamily="@font/lato_regular"
         android:text="Skip"
         android:textColor="#000"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:layout_width="0dp"
@@ -55,12 +66,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
     <ImageView
         android:id="@+id/imageView"
         android:scaleType="fitXY"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/ic_gruppo_di_maschere_4"
+        android:src="@drawable/ic_gruppo_di_maschere_41"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -125,6 +137,7 @@
         app:strokeWidth="2dp" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:text="Next"

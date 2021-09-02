@@ -9,16 +9,24 @@
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/drawable/customradius.xml" value="0.2552083333333333" />
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/drawable/gradient.xml" value="0.3828125" />
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/activity_home.xml" value="0.24444444444444444" />
-        <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/activity_tutorial_actitity.xml" value="0.24444444444444444" />
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/comfirm_password_change.xml" value="0.24444444444444444" />
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/custom_item.xml" value="0.24444444444444444" />
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/email.xml" value="0.30085470085470084" />
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/footer.xml" value="0.24444444444444444" />
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/fragment_coin.xml" value="0.33" />
+        <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/fragment_confirm_pass_change.xml" value="0.24444444444444444" />
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/fragment_editorial_news.xml" value="0.33" />
+        <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/fragment_email.xml" value="0.24444444444444444" />
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/fragment_home.xml" value="0.33" />
-        <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/fragment_menu.xml" value="0.41929720071471116" />
+        <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/fragment_login.xml" value="0.24444444444444444" />
+        <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/fragment_menu.xml" value="0.33" />
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/fragment_news.xml" value="0.33" />
+        <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/fragment_on_boarding.xml" value="0.23506944444444444" />
+        <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/fragment_on_boarding2.xml" value="0.24444444444444444" />
+        <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/fragment_on_boarding3.xml" value="0.24444444444444444" />
+        <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/fragment_sign_up.xml" value="0.24444444444444444" />
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/header_menu.xml" value="0.5" />
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/headerproduct.xml" value="0.24444444444444444" />
         <entry key="..\:/Code/Kotlin/ActivityFragNav/app/src/main/res/layout/listitem1.xml" value="0.5" />
