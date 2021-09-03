@@ -43,5 +43,10 @@
         android:id="@+id/editorialNewsFragment"
         android:name="dd.wan.activityfragnav.fragment.EditorialNewsFragment"
         android:label="fragment_editorial_news"
-        tools:layout="@layout/fragment_editorial_news" />
+        tools:layout="@layout/fragment_editorial_news" >
+        <argument
+            android:name="news"
+            app:argType="dd.wan.activityfragnav.model.New"
+            app:nullable="true" />
+    </fragment>
 </navigation>

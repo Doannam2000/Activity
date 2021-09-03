@@ -8,10 +8,9 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import dd.wan.activityfragnav.R
-import dd.wan.activityfragnav.model.Product
-import dd.wan.activityfragnav.model.item
+import dd.wan.activityfragnav.model.New
 
-class RecyclerAdapterProduct(var listItem: ArrayList<Product>) :
+class RecyclerAdapterNews(var listItem: ArrayList<New>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     lateinit var itemClick: (position: Int) -> Unit
 
@@ -54,12 +53,12 @@ class RecyclerAdapterProduct(var listItem: ArrayList<Product>) :
         var description: TextView = itemView.findViewById(R.id.description)
         var percent: TextView = itemView.findViewById(R.id.percentProduct)
         var layout:ConstraintLayout = itemView.findViewById(R.id.constraint)
-        fun setData(product:Product) {
-            name1.text = product.name
-            time.text = product.time
-            description.text = product.description
-            percent.text = product.percent
-            image.setImageResource(product.img)
+        fun setData(aNew:New) {
+            name1.text = aNew.name
+            time.text = aNew.time
+            description.text = aNew.description
+            percent.text = aNew.percent
+            image.setImageResource(aNew.img)
         }
         init {
             layout.setOnClickListener {

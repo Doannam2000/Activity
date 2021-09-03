@@ -10,12 +10,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import dd.wan.activityfragnav.R
+import dd.wan.activityfragnav.SqlHelper
 import kotlinx.android.synthetic.main.fragment_email.view.*
 
 
 class EmailFragment : Fragment() {
 
+    val args: EmailFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,6 +26,10 @@ class EmailFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         var view = inflater.inflate(R.layout.fragment_email, container, false)
+
+        val sqlHelper = SqlHelper(requireContext())
+
+        var email = args.email
 
         var time = 5
         var mHandler: Handler = @SuppressLint("HandlerLeak")
@@ -32,8 +39,8 @@ class EmailFragment : Fragment() {
                 when (msg.what) {
                     1 -> {
                         view.waitingTime.text = "Wait ${msg.arg1} seconds before sending it"
-                        if(msg.arg1==0)
-                        {
+                        if (msg.arg1 == 0) {
+                            view.waitingTime.visibility = View.INVISIBLE
                             view.resendEmail.isEnabled = true
                             view.resendEmail.alpha = 1F
                         }
@@ -53,7 +60,9 @@ class EmailFragment : Fragment() {
         }).start()
 
         view.resendEmail.setOnClickListener {
-            findNavController().navigate(R.id.confirmPassChangeFragment)
+            sqlHelper.updateData(email, "123")
+            val action = EmailFragmentDirections.actionEmailFragmentToConfirmPassChangeFragment(email)
+            findNavController().navigate(action)
         }
         return view
     }

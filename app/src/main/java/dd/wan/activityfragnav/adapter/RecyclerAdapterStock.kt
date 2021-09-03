@@ -13,42 +13,26 @@ import dd.wan.activityfragnav.model.Stock
 class RecyclerAdapterStock(var list: ArrayList<Stock>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
+    lateinit var itemClick: (position: Int) -> Unit
 
+    fun setCallBack(click: (position: Int) -> Unit) {
+        itemClick = click
+    }
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
     ): RecyclerView.ViewHolder {
         var view: View
-        if (viewType == 1) {
-            view = LayoutInflater.from(parent.context).inflate(R.layout.footer, parent, false)
-            return FooterViewHolder(view)
-        } else {
-            view = LayoutInflater.from(parent.context).inflate(R.layout.liststock, parent, false)
-            return ViewHolder(view)
-        }
+
+        view = LayoutInflater.from(parent.context).inflate(R.layout.liststock, parent, false)
+        return ViewHolder(view)
+
     }
 
-    lateinit var itemClick : (position:Int)->Unit
-
-    fun setCallBack(click:(position:Int)->Unit)
-    {
-        itemClick = click
-    }
-
-    override fun getItemViewType(position: Int): Int {
-        if (position == list.size) {
-
-            return 1
-        } else {
-
-            return 2
-        }
-    }
 
     override fun getItemCount(): Int {
-        return list.size + 1
+        return list.size
     }
-
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (holder is ViewHolder) {
             holder.setData(list.get(position))
@@ -61,15 +45,15 @@ class RecyclerAdapterStock(var list: ArrayList<Stock>) :
         var time: TextView = itemView.findViewById(R.id.time)
         var rate: TextView = itemView.findViewById(R.id.rate)
         var percent: TextView = itemView.findViewById(R.id.percent)
-        var constraint:ConstraintLayout = itemView.findViewById(R.id.constraintStock)
-        fun setData(item:Stock)
-        {
+        var constraint: ConstraintLayout = itemView.findViewById(R.id.constraintStock)
+        fun setData(item: Stock) {
             name.text = item.name
             location.text = item.location
             time.text = item.time
             rate.text = item.rate
             percent.text = item.percent
         }
+
         init {
             constraint.setOnClickListener {
                 itemClick.invoke(adapterPosition)
@@ -77,7 +61,10 @@ class RecyclerAdapterStock(var list: ArrayList<Stock>) :
         }
     }
 
-    inner class FooterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
+    fun loadMore(listItem:ArrayList<Stock>)
+    {
+        list.addAll(listItem)
+        notifyDataSetChanged()
     }
 }

@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dd.wan.activityfragnav.R
 import dd.wan.activityfragnav.adapter.RecyclerAdapter1
-import dd.wan.activityfragnav.adapter.RecyclerAdapterProduct
-import dd.wan.activityfragnav.model.Product
+import dd.wan.activityfragnav.adapter.RecyclerAdapterNews
+import dd.wan.activityfragnav.model.New
 import dd.wan.activityfragnav.model.color
 import kotlinx.android.synthetic.main.fragment_news.view.*
 
@@ -29,20 +29,20 @@ class NewsFragment : Fragment() {
             findNavController().navigateUp()
         }
 
-        var list = arrayListOf<Product>(
-            Product(
+        var list = arrayListOf<New>(
+            New(
                 R.drawable.product1,
                 "ATLANTIA",
                 "ALT -3,87%",
                 "3 Sept 2020",
                 "Illum velit nam voluptatum enim aut\nratione ratione officiis totam.\nMollitia eum sint tempora ducimus"
-            ),Product(
+            ),New(
                 R.drawable.product_2,
                 "XIAOMI",
                 "HKD -2,13%",
                 "2 Sept 2020",
                 "Illum velit nam voluptatum enim aut\nratione ratione officiis totam.\nMollitia eum sint tempora ducimus"
-            ),Product(
+            ),New(
                 R.drawable.product1,
                 "APPLE",
                 "AAPL -0,91%",
@@ -50,9 +50,10 @@ class NewsFragment : Fragment() {
                 "Illum velit nam voluptatum enim aut\nratione ratione officiis totam.\nMollitia eum sint tempora ducimus"
             )
         )
-        val adapterProduct = RecyclerAdapterProduct(list)
+        val adapterProduct = RecyclerAdapterNews(list)
         adapterProduct.setCallBack {
-            findNavController().navigate(R.id.editorialNewsFragment)
+            val action = NewsFragmentDirections.actionNewsFragmentToEditorialNewsFragment(list.get(it))
+            findNavController().navigate(action)
         }
         var recycler: RecyclerView = view.findViewById(R.id.recyclerProduct)
         recycler.layoutManager = LinearLayoutManager(context)

@@ -35,6 +35,9 @@
         <action
             android:id="@+id/action_signUpFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
     </fragment>
     <fragment
         android:id="@+id/confirmPassChangeFragment"
@@ -44,6 +47,9 @@
         <action
             android:id="@+id/action_confirmPassChangeFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <argument
+            android:name="email"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/emailFragment"
@@ -53,5 +59,8 @@
         <action
             android:id="@+id/action_emailFragment_to_confirmPassChangeFragment"
             app:destination="@id/confirmPassChangeFragment" />
+        <argument
+            android:name="email"
+            app:argType="string" />
     </fragment>
 </navigation>
