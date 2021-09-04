@@ -113,7 +113,9 @@
         android:textColorHint="#9d9d9d"
         android:fontFamily="@font/lato_light"
         android:background="@drawable/customedittext"
-
+        android:maxLines="1"
+        android:inputType="text"
+        android:imeOptions="actionNext"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
@@ -154,7 +156,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lato_light"
         android:text="Forgot Password?"
-        android:padding="5dp"
+        android:padding="10dp"
         android:textColor="#9d9d9d"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
@@ -164,7 +166,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up"
-        android:padding="5dp"
+        android:padding="10dp"
         android:textColor="#9d9d9d"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintTop_toTopOf="@+id/forgotPass" />

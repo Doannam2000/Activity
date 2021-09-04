@@ -9,7 +9,7 @@
         android:id="@+id/homeFragment"
         android:name="dd.wan.activityfragnav.fragment.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_coinFragment"
             app:destination="@id/coinFragment" />
@@ -23,7 +23,7 @@
         android:id="@+id/newsFragment"
         android:name="dd.wan.activityfragnav.fragment.NewsFragment"
         android:label="fragment_news"
-        tools:layout="@layout/fragment_news" >
+        tools:layout="@layout/fragment_news">
         <action
             android:id="@+id/action_newsFragment_to_editorialNewsFragment"
             app:destination="@id/editorialNewsFragment" />
@@ -32,21 +32,22 @@
         android:id="@+id/coinFragment"
         android:name="dd.wan.activityfragnav.fragment.CoinFragment"
         android:label="fragment_coin"
-        tools:layout="@layout/fragment_coin" >
+        tools:layout="@layout/fragment_coin">
         <argument
             android:name="stock"
+            android:defaultValue="@null"
             app:argType="dd.wan.activityfragnav.model.Stock"
-            app:nullable="true"
-            android:defaultValue="@null" />
+            app:nullable="true" />
     </fragment>
     <fragment
         android:id="@+id/editorialNewsFragment"
         android:name="dd.wan.activityfragnav.fragment.EditorialNewsFragment"
         android:label="fragment_editorial_news"
-        tools:layout="@layout/fragment_editorial_news" >
+        tools:layout="@layout/fragment_editorial_news">
         <argument
             android:name="news"
             app:argType="dd.wan.activityfragnav.model.New"
             app:nullable="true" />
     </fragment>
+
 </navigation>

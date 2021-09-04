@@ -4,14 +4,20 @@
     tools:ignore="MenuTitle">
     <item
         android:id="@+id/homeFragment"
-        android:icon="@drawable/icons_8_increase" />
+        android:checkable="true"
+        android:checked="true"
+        android:icon="@drawable/icons_8_increase"
+        android:menuCategory="secondary" />
     <item
         android:id="@+id/coinFragment"
-        android:icon="@drawable/icons_8_chart" />
+        android:icon="@drawable/icons_8_chart"
+        android:menuCategory="secondary" />
     <item
         android:id="@+id/newsFragment"
-        android:icon="@drawable/icons_8_news" />
+        android:icon="@drawable/icons_8_news"
+        android:menuCategory="secondary"/>
     <item
         android:id="@+id/menuFragment"
-        android:icon="@drawable/icons_8_customer" />
+        android:icon="@drawable/icons_8_customer"
+        android:menuCategory="secondary" />
 </menu>

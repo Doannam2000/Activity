@@ -247,9 +247,9 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#0cf2b4"
         app:layout_constraintBottom_toTopOf="@+id/guideline27"
-
         app:layout_constraintEnd_toStartOf="@+id/imageView17"
         app:layout_constraintStart_toEndOf="@+id/imageView16"
         app:layout_constraintTop_toTopOf="@+id/guideline26">
@@ -258,7 +258,6 @@
             android:id="@+id/nameStockChart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#0cf2b4"
             android:fontFamily="@font/lato_regular"
             android:paddingHorizontal="10dp"
             android:paddingVertical="3dp"
