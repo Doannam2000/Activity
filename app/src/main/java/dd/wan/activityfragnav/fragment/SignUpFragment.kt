@@ -32,7 +32,7 @@ class SignUpFragment : Fragment() {
                         SignUpFragmentDirections.actionSignUpFragmentToLoginFragment(mail, password)
                     findNavController().navigate(action)
                 } else {
-                    Toast.makeText(context, "Email đã tồn tại !!!", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, "Email already exists !!!", Toast.LENGTH_LONG).show()
                 }
             }
         }
@@ -46,11 +46,11 @@ class SignUpFragment : Fragment() {
                     val action = SignUpFragmentDirections.actionSignUpFragmentToEmailFragment(email)
                     findNavController().navigate(action)
                 } else {
-                    Toast.makeText(context, "Email chưa tồn tại trong hệ thống", Toast.LENGTH_LONG)
+                    Toast.makeText(context, "Email does not exist", Toast.LENGTH_LONG)
                         .show()
                 }
             } else {
-                Toast.makeText(context, "Bạn phải nhập email !!!", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, "You must enter your email !!!", Toast.LENGTH_LONG).show()
             }
         }
         return view

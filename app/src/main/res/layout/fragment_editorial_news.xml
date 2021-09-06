@@ -35,8 +35,8 @@
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:padding="10dp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:padding="@dimen/dimen_10dp"
         android:src="@drawable/ic_baseline_arrow_back_ios_24"
         app:layout_constraintBottom_toTopOf="@+id/guideline21"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,12 +44,10 @@
 
     <TextView
         android:id="@+id/nameNews"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/raleway_black"
+        style="@style/font_raleway_black"
         android:text="EDITORIAL NEWS"
         android:textColor="#121212"
-        android:textSize="22sp"
+        android:textSize="@dimen/dimen_22sp"
         app:layout_constraintBottom_toBottomOf="@+id/back"
         app:layout_constraintStart_toEndOf="@+id/back"
         app:layout_constraintTop_toTopOf="@+id/back" />
@@ -76,17 +74,18 @@
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline22"
-        android:fitsSystemWindows="true"
-        android:fillViewport="true">
+        app:layout_constraintTop_toTopOf="@+id/guideline22">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#f8f8f8">
+
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline35"
                 android:layout_width="wrap_content"
@@ -115,22 +114,20 @@
                 android:id="@+id/cardView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
-                android:layout_marginRight="5dp"
-                app:cardCornerRadius="10dp"
+                android:layout_marginTop="@dimen/dimen_22dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                app:cardCornerRadius="@dimen/dimen_10dp"
                 app:layout_constraintEnd_toStartOf="@+id/guideline34"
                 app:layout_constraintTop_toBottomOf="@+id/imageView20">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/font_raleway_regular"
                     android:background="#0cf2b4"
-                    android:fontFamily="@font/raleway_regular"
-                    android:paddingHorizontal="5dp"
-                    android:paddingVertical="2dp"
+                    android:paddingHorizontal="@dimen/dimen_5dp"
+                    android:paddingVertical="@dimen/dimen_2dp"
                     android:text="CRYPTOCURRENCY"
                     android:textColor="#0a0909"
-                    android:textSize="9sp" />
+                    android:textSize="@dimen/dimen_9sp" />
 
             </androidx.cardview.widget.CardView>
 
@@ -138,7 +135,7 @@
                 android:id="@+id/imageView21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
                 android:src="@drawable/icons_8_calendar"
                 app:layout_constraintStart_toStartOf="@+id/guideline35"
                 app:layout_constraintTop_toBottomOf="@+id/cardView4" />
@@ -155,16 +152,14 @@
 
             <TextView
                 android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/font_raleway_black"
                 android:background="#6021ea"
-                android:fontFamily="@font/raleway_black"
                 android:gravity="right"
-                android:paddingLeft="7dp"
                 android:paddingVertical="5dp"
+                android:paddingLeft="7dp"
                 android:text="What is the future of\ncryptocurrencies?"
                 android:textColor="#fff"
-                android:textSize="18sp"
+                android:textSize="@dimen/dimen_18sp"
                 app:layout_constraintEnd_toStartOf="@+id/guideline34"
                 app:layout_constraintTop_toTopOf="@+id/imageView21" />
 
@@ -172,10 +167,10 @@
                 android:id="@+id/textView17"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="@dimen/dimen_35dp"
                 android:text="Rem deserunt voluptatem sapiente. Quod sint officiis quae magnam. Qui eaque atque quia. Incidunt dolor  reiciendis tenetur libero error consequatur voluptaterecusandae. Sequi voluptatum quas. Ullam voluptatemreprehenderit ea commodi. Doloremque autem praesentium qui harum quia sunt voluptatem eius at.Voluptates voluptatem eaque et voluptas maxime  molestiae et. Et saepe perferendis ut quidem et est. Etiusto ut nostrum delectus. Libero et modi placeat  labore sit et quaerat sed. Dolorem libero earum ipsum illum nemo."
                 android:textColor="#000"
-               app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                app:layout_constraintEnd_toStartOf="@+id/guideline34"
                 app:layout_constraintStart_toStartOf="@+id/guideline35"
                 app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -183,7 +178,7 @@
                 android:id="@+id/textView18"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
                 android:text="Rem deserunt voluptatem sapiente. Quod sint officiis quae magnam. Qui eaque atque quia. Incidunt dolor  reiciendis tenetur libero error consequatur voluptaterecusandae. Sequi voluptatum quas. Ullam voluptatemreprehenderit ea commodi. Doloremque autem praesentium qui harum quia sunt voluptatem eius at.Voluptates voluptatem eaque et voluptas maxime  molestiae et. Et saepe perferendis ut quidem et est. Etiusto ut nostrum delectus. Libero et modi placeat  labore sit et quaerat sed. Dolorem libero earum ipsum illum nemo."
                 android:textColor="#000"
                 app:layout_constraintEnd_toStartOf="@+id/guideline34"
@@ -194,18 +189,19 @@
                 android:id="@+id/textView19"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
                 android:text="Rem deserunt voluptatem sapiente. Quod sint officiis quae magnam. Qui eaque atque quia. Incidunt dolor  reiciendis tenetur libero error consequatur voluptaterecusandae. Sequi voluptatum quas. Ullam voluptatemreprehenderit ea commodi. Doloremque autem praesentium qui harum quia sunt voluptatem eius at.Voluptates voluptatem eaque et voluptas maxime  molestiae et. Et saepe perferendis ut quidem et est. Etiusto ut nostrum delectus. Libero et modi placeat  labore sit et quaerat sed. Dolorem libero earum ipsum illum nemo."
                 android:textColor="#000"
-                android:layout_marginTop="20dp"
                 app:layout_constraintEnd_toStartOf="@+id/guideline34"
                 app:layout_constraintStart_toStartOf="@+id/guideline35"
                 app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
                 android:text="Rem deserunt voluptatem sapiente. Quod sint officiis quae magnam. Qui eaque atque quia. Incidunt dolor  reiciendis tenetur libero error consequatur voluptaterecusandae. Sequi voluptatum quas. Ullam voluptatemreprehenderit ea commodi. Doloremque autem praesentium qui harum quia sunt voluptatem eius at.Voluptates voluptatem eaque et voluptas maxime  molestiae et. Et saepe perferendis ut quidem et est. Etiusto ut nostrum delectus. Libero et modi placeat  labore sit et quaerat sed. Dolorem libero earum ipsum illum nemo."
                 android:textColor="#000"
-                android:layout_marginTop="20dp"
                 app:layout_constraintEnd_toStartOf="@+id/guideline34"
                 app:layout_constraintStart_toStartOf="@+id/guideline35"
                 app:layout_constraintTop_toBottomOf="@+id/textView19" />
@@ -215,8 +211,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:alpha="0.5"
         android:background="#fff"
         android:clickable="false"
-        android:alpha="0.5"
         app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

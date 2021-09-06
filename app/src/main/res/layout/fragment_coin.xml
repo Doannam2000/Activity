@@ -74,7 +74,7 @@
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="5dp"
+        android:padding="@dimen/dimen_5dp"
         android:src="@drawable/ic_baseline_arrow_back_ios_24"
         app:layout_constraintBottom_toTopOf="@+id/guideline23"
         app:layout_constraintStart_toStartOf="@+id/guideline24"
@@ -82,35 +82,29 @@
 
     <TextView
         android:id="@+id/nameStock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/raleway_black"
+        style="@style/font_raleway_black"
         android:text="NEO INDEX"
         android:textColor="#1d1d1d"
-        android:textSize="22sp"
+        android:textSize="@dimen/dimen_22sp"
         app:layout_constraintStart_toEndOf="@+id/back"
         app:layout_constraintTop_toTopOf="@+id/back" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/raleway_medium"
+        style="@style/font_raleway_medium"
+        android:layout_marginTop="@dimen/dimen_5dp"
         android:text="USD"
         android:textColor="#1d1d1d"
-        android:textSize="12sp"
+        android:textSize="@dimen/dimen_12sp"
         app:layout_constraintStart_toEndOf="@+id/back"
         app:layout_constraintTop_toBottomOf="@+id/nameStock" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/raleway_medium"
+        style="@style/font_raleway_medium"
+        android:layout_marginStart="@dimen/dimen_20dp"
         android:text="Binance"
         android:textColor="#1d1d1d"
-        android:textSize="12sp"
+        android:textSize="@dimen/dimen_12sp"
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toTopOf="@+id/textView10" />
 
@@ -118,19 +112,19 @@
         android:id="@+id/imageView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="5dp"
+        android:padding="@dimen/dimen_5dp"
         android:src="@drawable/ic_baseline_more_vert_24"
         app:layout_constraintBottom_toTopOf="@+id/guideline23"
         app:layout_constraintEnd_toStartOf="@+id/guideline25"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/alarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="8dp"
-        android:id="@+id/alarm"
         android:backgroundTint="#000"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="@dimen/dimen_20dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView14"
         app:layout_constraintEnd_toStartOf="@+id/imageView14"
         app:layout_constraintHorizontal_bias="1"
@@ -138,9 +132,9 @@
         app:layout_constraintTop_toTopOf="@+id/imageView14">
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:padding="8dp"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:padding="@dimen/dimen_6dp"
             android:src="@drawable/icons_8_alarm" />
     </androidx.cardview.widget.CardView>
 
@@ -158,7 +152,7 @@
             android:id="@+id/imageView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="@dimen/dimen_20dp"
             android:src="@drawable/icons_8_long_arrow_up"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -172,19 +166,17 @@
             android:fontFamily="@font/lato_light"
             android:text="RATE"
             android:textColor="#bcbcbc"
-            android:textSize="12sp"
+            android:textSize="@dimen/dimen_12sp"
             app:layout_constraintBottom_toTopOf="@+id/imageView15"
             app:layout_constraintStart_toEndOf="@+id/imageView15" />
 
         <TextView
             android:id="@+id/rate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/raleway_black"
+            style="@style/font_raleway_black"
+            android:layout_marginBottom="@dimen/dimen_10dp"
             android:text="21,1637"
             android:textColor="#fff"
-            android:textSize="22sp"
+            android:textSize="@dimen/dimen_22sp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView15"
             app:layout_constraintStart_toEndOf="@+id/imageView15"
             app:layout_constraintTop_toTopOf="@+id/imageView15" />
@@ -196,7 +188,7 @@
             android:fontFamily="@font/lato_regular"
             android:text="17:00:33 Real time"
             android:textColor="#fff"
-            android:textSize="10sp"
+            android:textSize="@dimen/dimen_16sp"
             app:layout_constraintStart_toStartOf="@+id/rate"
             app:layout_constraintTop_toBottomOf="@+id/rate" />
 
@@ -207,7 +199,7 @@
             android:fontFamily="@font/lato_light"
             android:text="TODAY CHANGE"
             android:textColor="#bcbcbc"
-            android:textSize="10sp"
+            android:textSize="@dimen/dimen_10sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.85"
             app:layout_constraintStart_toEndOf="@+id/textView11"
@@ -215,12 +207,10 @@
 
         <TextView
             android:id="@+id/percent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/raleway_bold"
+            style="@style/font_raleway_bold"
             android:text="+2,0634 (+9,44%)"
             android:textColor="#fff"
-            android:textSize="16sp"
+            android:textSize="@dimen/dimen_16sp"
             app:layout_constraintBottom_toBottomOf="@+id/rate"
             app:layout_constraintEnd_toEndOf="@+id/textView13"
             app:layout_constraintTop_toTopOf="@+id/rate" />
@@ -247,8 +237,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
         android:backgroundTint="#0cf2b4"
+        app:cardCornerRadius="@dimen/dimen_10dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline27"
         app:layout_constraintEnd_toStartOf="@+id/imageView17"
         app:layout_constraintStart_toEndOf="@+id/imageView16"
@@ -259,7 +249,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_regular"
-            android:paddingHorizontal="10dp"
+            android:paddingHorizontal="@dimen/dimen_10dp"
             android:paddingVertical="3dp"
             android:text="NEO Chart"
             android:textColor="#222222" />
@@ -332,30 +322,26 @@
                 android:id="@+id/navbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="30dp" />
+                android:paddingLeft="@dimen/dimen_30dp" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            style="@style/font_raleway_regular"
+            android:layout_marginStart="@dimen/dimen_12dp"
             android:layout_marginTop="0dp"
-            android:fontFamily="@font/raleway_regular"
             android:text="Buy or Sell for NEO"
             android:textColor="#222222"
-            android:textSize="10sp"
+            android:textSize="@dimen/dimen_10sp"
             app:layout_constraintStart_toStartOf="@+id/guideline32"
             app:layout_constraintTop_toBottomOf="@+id/guideline31" />
 
         <TextView
             android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/raleway_regular"
+            style="@style/font_raleway_regular"
             android:text="Mkt Capitalization"
             android:textColor="#222222"
-            android:textSize="10sp"
+            android:textSize="@dimen/dimen_10sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline33"
             app:layout_constraintHorizontal_bias="0.811"
             app:layout_constraintStart_toEndOf="@+id/textView14"
@@ -364,9 +350,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
             android:backgroundTint="#fff"
-            app:cardCornerRadius="20dp"
+            app:cardCornerRadius="@dimen/dimen_20dp"
             app:layout_constraintEnd_toEndOf="@+id/textView14"
             app:layout_constraintStart_toStartOf="@+id/textView14"
             app:layout_constraintTop_toBottomOf="@+id/textView14">
@@ -375,16 +361,16 @@
                 android:id="@+id/imageView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:padding="@dimen/dimen_10dp"
                 android:src="@drawable/ic_raggruppa_38" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
             android:backgroundTint="#fff"
-            app:cardCornerRadius="20dp"
+            app:cardCornerRadius="@dimen/dimen_20dp"
             app:layout_constraintEnd_toEndOf="@+id/textView15"
             app:layout_constraintStart_toStartOf="@+id/textView15"
             app:layout_constraintTop_toBottomOf="@+id/textView15">
@@ -392,7 +378,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="19dp"
+                android:padding="@dimen/dimen_19dp"
                 android:src="@drawable/ic_raggruppa_60" />
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/constraintStock"
-    android:paddingVertical="20dp">
+    android:paddingVertical="@dimen/dimen_20dp">
 
     <TextView
         android:id="@+id/name"
@@ -14,7 +14,7 @@
         android:fontFamily="@font/lato_black"
         android:text="DOWN JONES"
         android:textColor="#676767"
-        android:textSize="16sp"
+        android:textSize="@dimen/dimen_16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,10 +23,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lato_regular"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
         android:text="NYSE"
         android:textColor="#4d4d4d"
-        android:textSize="12sp"
+        android:textSize="@dimen/dimen_12sp"
         app:layout_constraintStart_toStartOf="@+id/name"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
@@ -34,11 +34,11 @@
         android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="@dimen/dimen_5dp"
         android:fontFamily="@font/lato_regular"
         android:text="10:44:45"
         android:textColor="#676767"
-        android:textSize="12sp"
+        android:textSize="@dimen/dimen_12sp"
         app:layout_constraintBottom_toBottomOf="@+id/location"
         app:layout_constraintStart_toEndOf="@+id/location"
         app:layout_constraintTop_toTopOf="@+id/location" />
@@ -47,7 +47,7 @@
         android:id="@+id/cardView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="13dp"
+        app:cardCornerRadius="@dimen/dimen_13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toEndOf="@+id/name"
@@ -58,8 +58,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_regular"
-            android:paddingVertical="4dp"
-            android:paddingHorizontal="10dp"
+            android:paddingVertical="@dimen/dimen_4dp"
+            android:paddingHorizontal="@dimen/dimen_10dp"
             android:text="20.047,50"
             android:background="#2bfeba"
             android:textColor="#020202" />
@@ -71,8 +71,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lato_regular"
         android:text="+203 (+1,04%)"
-        android:layout_marginTop="5dp"
-        android:textSize="12sp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:textSize="@dimen/dimen_12sp"
         app:layout_constraintEnd_toEndOf="@+id/cardView2"
         app:layout_constraintStart_toStartOf="@+id/cardView2"
         app:layout_constraintTop_toBottomOf="@+id/cardView2"

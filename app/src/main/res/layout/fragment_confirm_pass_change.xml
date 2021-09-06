@@ -57,15 +57,12 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/raleway_black"
+        style="@style/font_raleway_black"
         android:text="TRADIX"
         android:textColor="#2b2828"
-        android:textSize="40sp"
+        android:textSize="@dimen/dimen_40sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6" />
@@ -74,7 +71,7 @@
         android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="@dimen/dimen_5dp"
         android:layout_marginBottom="8dp"
         android:src="@drawable/ic_coin"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
@@ -102,13 +99,11 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/raleway_black"
+        style="@style/font_raleway_black"
         android:gravity="center"
         android:text="Yay! Your password has been\nchanged!"
         android:textColor="#656565"
-        android:textSize="22sp"
+        android:textSize="@dimen/dimen_22sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,7 +112,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="@dimen/dimen_20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
@@ -125,10 +120,9 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/font_lato_black"
             android:text="LOGIN"
             android:textColor="#fff"
-            android:fontFamily="@font/lato_black"
             android:background="#e432c1"/>
     </androidx.cardview.widget.CardView>
 

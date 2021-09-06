@@ -44,7 +44,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:padding="@dimen/dimen_10dp"
         android:src="@drawable/ic_baseline_search_24"
         app:layout_constraintBottom_toTopOf="@+id/guideline21"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +58,7 @@
         android:background="@drawable/customradius"
         android:backgroundTint="#f8f8f8"
         android:gravity="center"
-        android:paddingLeft="10dp"
+        android:paddingLeft="@dimen/dimen_10dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline22"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +88,7 @@
                 android:id="@+id/recycleStock"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="30dp"
+                android:paddingHorizontal="@dimen/dimen_30dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -96,8 +96,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginVertical="30dp"
-                app:cardCornerRadius="13dp"
+                android:layout_marginVertical="@dimen/dimen_30dp"
+                app:cardCornerRadius="@dimen/dimen_13dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -105,14 +105,13 @@
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/loadMore"
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
+                    style="@style/font_raleway_medium"
+                    android:layout_height="@dimen/dimen_35dp"
                     android:background="#e432c1"
-                    android:fontFamily="@font/raleway_medium"
-                    android:paddingHorizontal="25dp"
+                    android:paddingHorizontal="@dimen/dimen_25dp"
                     android:text="Load More"
                     android:textColor="#fff"
-                    android:textSize="15sp" />
+                    android:textSize="@dimen/dimen_15sp" />
             </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
@@ -121,8 +120,8 @@
         android:id="@+id/btnAlarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="@dimen/dimen_25dp"
+        android:layout_marginBottom="@dimen/dimen_25dp"
         app:backgroundTint="#000"
         android:src="@drawable/icons_8_alarm"
         app:layout_constraintBottom_toBottomOf="parent"

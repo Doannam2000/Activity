@@ -61,7 +61,6 @@ class CoinFragment : Fragment() {
         recycler.setHasFixedSize(true)
         recycler.adapter = RecyclerAdapter1(list,color)
 
-
         return  view
     }
 

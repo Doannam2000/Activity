@@ -37,20 +37,18 @@
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:padding="10dp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:padding="@dimen/dimen_10dp"
         android:src="@drawable/ic_baseline_arrow_back_ios_24"
         app:layout_constraintBottom_toTopOf="@+id/guideline21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/raleway_black"
+        style="@style/font_raleway_black"
         android:text="MENU"
         android:textColor="#121212"
-        android:textSize="22sp"
+        android:textSize="@dimen/dimen_22sp"
         app:layout_constraintBottom_toBottomOf="@+id/back"
         app:layout_constraintStart_toEndOf="@+id/back"
         app:layout_constraintTop_toTopOf="@+id/back" />
@@ -64,7 +62,7 @@
         android:backgroundTint="#f8f8f8"
         android:gravity="center"
         android:orientation="vertical"
-        android:paddingLeft="10dp"
+        android:paddingLeft="@dimen/dimen_10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

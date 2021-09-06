@@ -46,11 +46,11 @@ class LoginFragment : Fragment() {
                     )
                     findNavController().navigate(action)
                 } else {
-                    Toast.makeText(context, "Email chưa tồn tại trong hệ thống !!!", Toast.LENGTH_LONG)
+                    Toast.makeText(context, "Email does not exist!!!", Toast.LENGTH_LONG)
                         .show()
                 }
             } else {
-                Toast.makeText(context, "Bạn phải nhập email !!!", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, "You must enter your email !!!", Toast.LENGTH_LONG).show()
             }
         }
         view.signUp.setOnClickListener {
@@ -75,11 +75,11 @@ class LoginFragment : Fragment() {
                 if (index == 0)
                     Toast.makeText(
                         context,
-                        "Tài khoản hoặc mật khẩu không chính xác !!!",
+                        "Incorrect account or password !!!",
                         Toast.LENGTH_LONG
                     ).show()
             } else {
-                Toast.makeText(context, "Bạn phải nhập đầy đủ thông tin !!!", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, "You must enter all the information !!!", Toast.LENGTH_LONG).show()
             }
         }
         return view

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tracciato">
+        <item name="android:layout_width">@dimen/dimen_8dp</item>
+        <item name="android:layout_height">@dimen/dimen_8dp</item>
+        <item name="cardCornerRadius">@dimen/dimen_8dp</item>
+        <item name="strokeWidth">@dimen/dimen_2dp</item>
+        <item name="strokeColor">#e432c1</item>
+    </style>
+    <style name="font_raleway_black">
+        <item name="fontFamily">@font/raleway_black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="font_raleway_bold">
+        <item name="fontFamily">@font/raleway_bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="font_raleway_medium">
+        <item name="fontFamily">@font/raleway_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="font_raleway_regular">
+        <item name="fontFamily">@font/raleway_regular</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="font_lato_black">
+        <item name="fontFamily">@font/lato_black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>
