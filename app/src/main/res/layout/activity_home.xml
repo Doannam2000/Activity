@@ -21,14 +21,11 @@
         android:paddingHorizontal="@dimen/dimen_10dp"
         app:itemBackground="@drawable/custom_item_nav"
         app:itemIconTint="@drawable/color_item_selected"
-        app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
         app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline36"
-        app:layout_constraintVertical_bias="0.0"
         app:menu="@menu/nav_bottom"/>
 
     <androidx.fragment.app.FragmentContainerView
@@ -39,8 +36,8 @@
         app:defaultNavHost="true"
         app:layout_constraintBottom_toTopOf="@+id/guideline36"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         app:navGraph="@navigation/nav_graph_home"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="93dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
