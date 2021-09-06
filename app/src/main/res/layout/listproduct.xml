@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lato_light"
         android:text="Illum velit nam voluptatum enim aut \nratione ratione officiis totam. \nMollitia eum sint tempora ducimus"
-        android:textColor="#000"
+        android:textColor="@color/black"
         android:textSize="@dimen/dimen_12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/nameProduct"

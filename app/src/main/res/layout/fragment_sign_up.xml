@@ -62,7 +62,7 @@
         android:id="@+id/textView5"
         style="@style/font_raleway_black"
         android:text="TRADIX"
-        android:textColor="#2b2828"
+        android:textColor="@color/black_2"
         android:textSize="@dimen/dimen_40sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,7 +86,7 @@
         android:layout_marginTop="@dimen/dimen_5dp"
         android:fontFamily="@font/lato_light"
         android:text="The future of trading"
-        android:textColor="#171717"
+        android:textColor="@color/black_5"
         android:textSize="@dimen/dimen_22sp"
         app:layout_constraintEnd_toEndOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="@+id/textView5"
@@ -96,7 +96,7 @@
         android:id="@+id/textView6"
         style="@style/font_raleway_black"
         android:text="Create a free account"
-        android:textColor="#656565"
+        android:textColor="@color/brownish_grey"
         android:textSize="@dimen/dimen_22sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,7 +113,7 @@
         android:inputType="text"
         android:maxLines="1"
         android:paddingLeft="@dimen/dimen_25dp"
-        android:textColorHint="#9d9d9d"
+        android:textColorHint="@color/warm_grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
@@ -130,7 +130,7 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:paddingLeft="@dimen/dimen_25dp"
-        android:textColorHint="#9d9d9d"
+        android:textColorHint="@color/warm_grey"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
         app:layout_constraintTop_toBottomOf="@+id/email" />
@@ -155,7 +155,7 @@
         android:fontFamily="@font/lato_light"
         android:padding="10dp"
         android:text="Forgot Password?"
-        android:textColor="#9d9d9d"
+        android:textColor="@color/warm_grey"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
         app:layout_constraintTop_toBottomOf="@+id/signUp" />
 
@@ -165,7 +165,7 @@
         android:layout_height="wrap_content"
         android:padding="@dimen/dimen_10dp"
         android:text="Login"
-        android:textColor="#9d9d9d"
+        android:textColor="@color/warm_grey"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintTop_toTopOf="@+id/forgotPass" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -45,7 +45,7 @@
         android:paddingHorizontal="@dimen/dimen_40dp"
         android:paddingVertical="@dimen/dimen_10dp"
         android:text="Skip"
-        android:textColor="#000"
+        android:textColor="@color/black"
         android:textSize="@dimen/dimen_14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -54,7 +54,7 @@
         android:id="@+id/textView2"
         style="@style/font_raleway_black"
         android:text="Follow our tips\nto achieve success!"
-        android:textColor="#3e3e3e"
+        android:textColor="@color/greyish_brown_3"
         android:textSize="@dimen/dimen_28sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +69,7 @@
         android:layout_marginTop="@dimen/dimen_8dp"
         android:fontFamily="@font/lato_light"
         android:text="Ex totam praesentium incidunt aut."
-        android:textColor="#000"
+        android:textColor="@color/black"
         android:textSize="@dimen/dimen_14sp"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />

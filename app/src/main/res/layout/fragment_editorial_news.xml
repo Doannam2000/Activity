@@ -58,7 +58,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/customradius"
-        android:backgroundTint="#f8f8f8"
+        android:backgroundTint="@color/white_2"
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/guideline22"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +84,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#f8f8f8">
+            android:background="@color/white_2">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline35"
@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/lato_lightitalic"
                 android:text="02 Set 2020"
-                android:textColor="#000"
+                android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="@+id/textView16"
                 app:layout_constraintStart_toStartOf="@+id/guideline35"
                 app:layout_constraintTop_toBottomOf="@+id/imageView21" />
@@ -169,7 +169,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_35dp"
                 android:text="Rem deserunt voluptatem sapiente. Quod sint officiis quae magnam. Qui eaque atque quia. Incidunt dolor  reiciendis tenetur libero error consequatur voluptaterecusandae. Sequi voluptatum quas. Ullam voluptatemreprehenderit ea commodi. Doloremque autem praesentium qui harum quia sunt voluptatem eius at.Voluptates voluptatem eaque et voluptas maxime  molestiae et. Et saepe perferendis ut quidem et est. Etiusto ut nostrum delectus. Libero et modi placeat  labore sit et quaerat sed. Dolorem libero earum ipsum illum nemo."
-                android:textColor="#000"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toStartOf="@+id/guideline34"
                 app:layout_constraintStart_toStartOf="@+id/guideline35"
                 app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -180,7 +180,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_20dp"
                 android:text="Rem deserunt voluptatem sapiente. Quod sint officiis quae magnam. Qui eaque atque quia. Incidunt dolor  reiciendis tenetur libero error consequatur voluptaterecusandae. Sequi voluptatum quas. Ullam voluptatemreprehenderit ea commodi. Doloremque autem praesentium qui harum quia sunt voluptatem eius at.Voluptates voluptatem eaque et voluptas maxime  molestiae et. Et saepe perferendis ut quidem et est. Etiusto ut nostrum delectus. Libero et modi placeat  labore sit et quaerat sed. Dolorem libero earum ipsum illum nemo."
-                android:textColor="#000"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toStartOf="@+id/guideline34"
                 app:layout_constraintStart_toStartOf="@+id/guideline35"
                 app:layout_constraintTop_toBottomOf="@+id/textView17" />
@@ -191,7 +191,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_20dp"
                 android:text="Rem deserunt voluptatem sapiente. Quod sint officiis quae magnam. Qui eaque atque quia. Incidunt dolor  reiciendis tenetur libero error consequatur voluptaterecusandae. Sequi voluptatum quas. Ullam voluptatemreprehenderit ea commodi. Doloremque autem praesentium qui harum quia sunt voluptatem eius at.Voluptates voluptatem eaque et voluptas maxime  molestiae et. Et saepe perferendis ut quidem et est. Etiusto ut nostrum delectus. Libero et modi placeat  labore sit et quaerat sed. Dolorem libero earum ipsum illum nemo."
-                android:textColor="#000"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toStartOf="@+id/guideline34"
                 app:layout_constraintStart_toStartOf="@+id/guideline35"
                 app:layout_constraintTop_toBottomOf="@+id/textView18" />
@@ -201,7 +201,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_20dp"
                 android:text="Rem deserunt voluptatem sapiente. Quod sint officiis quae magnam. Qui eaque atque quia. Incidunt dolor  reiciendis tenetur libero error consequatur voluptaterecusandae. Sequi voluptatum quas. Ullam voluptatemreprehenderit ea commodi. Doloremque autem praesentium qui harum quia sunt voluptatem eius at.Voluptates voluptatem eaque et voluptas maxime  molestiae et. Et saepe perferendis ut quidem et est. Etiusto ut nostrum delectus. Libero et modi placeat  labore sit et quaerat sed. Dolorem libero earum ipsum illum nemo."
-                android:textColor="#000"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toStartOf="@+id/guideline34"
                 app:layout_constraintStart_toStartOf="@+id/guideline35"
                 app:layout_constraintTop_toBottomOf="@+id/textView19" />

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="@color/white"
     tools:context=".fragment.CoinFragment">
 
     <androidx.constraintlayout.widget.Guideline
@@ -123,7 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="8dp"
-        android:backgroundTint="#000"
+        android:backgroundTint="@color/black"
         app:cardCornerRadius="@dimen/dimen_20dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView14"
         app:layout_constraintEnd_toStartOf="@+id/imageView14"
@@ -175,7 +175,7 @@
             style="@style/font_raleway_black"
             android:layout_marginBottom="@dimen/dimen_10dp"
             android:text="21,1637"
-            android:textColor="#fff"
+            android:textColor="@color/white"
             android:textSize="@dimen/dimen_22sp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView15"
             app:layout_constraintStart_toEndOf="@+id/imageView15"
@@ -187,7 +187,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_regular"
             android:text="17:00:33 Real time"
-            android:textColor="#fff"
+            android:textColor="@color/white"
             android:textSize="@dimen/dimen_16sp"
             app:layout_constraintStart_toStartOf="@+id/rate"
             app:layout_constraintTop_toBottomOf="@+id/rate" />
@@ -209,7 +209,7 @@
             android:id="@+id/percent"
             style="@style/font_raleway_bold"
             android:text="+2,0634 (+9,44%)"
-            android:textColor="#fff"
+            android:textColor="@color/white"
             android:textSize="@dimen/dimen_16sp"
             app:layout_constraintBottom_toBottomOf="@+id/rate"
             app:layout_constraintEnd_toEndOf="@+id/textView13"
@@ -252,7 +252,7 @@
             android:paddingHorizontal="@dimen/dimen_10dp"
             android:paddingVertical="3dp"
             android:text="NEO Chart"
-            android:textColor="#222222" />
+            android:textColor="@color/black_4" />
 
     </androidx.cardview.widget.CardView>
 
@@ -281,7 +281,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/customradius"
-        android:backgroundTint="#f8f8f8"
+        android:backgroundTint="@color/white_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -331,7 +331,7 @@
             android:layout_marginStart="@dimen/dimen_12dp"
             android:layout_marginTop="0dp"
             android:text="Buy or Sell for NEO"
-            android:textColor="#222222"
+            android:textColor="@color/black_4"
             android:textSize="@dimen/dimen_10sp"
             app:layout_constraintStart_toStartOf="@+id/guideline32"
             app:layout_constraintTop_toBottomOf="@+id/guideline31" />
@@ -340,7 +340,7 @@
             android:id="@+id/textView15"
             style="@style/font_raleway_regular"
             android:text="Mkt Capitalization"
-            android:textColor="#222222"
+            android:textColor="@color/black_4"
             android:textSize="@dimen/dimen_10sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline33"
             app:layout_constraintHorizontal_bias="0.811"
@@ -351,7 +351,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_10dp"
-            android:backgroundTint="#fff"
+            android:backgroundTint="@color/white"
             app:cardCornerRadius="@dimen/dimen_20dp"
             app:layout_constraintEnd_toEndOf="@+id/textView14"
             app:layout_constraintStart_toStartOf="@+id/textView14"
@@ -369,7 +369,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_10dp"
-            android:backgroundTint="#fff"
+            android:backgroundTint="@color/white"
             app:cardCornerRadius="@dimen/dimen_20dp"
             app:layout_constraintEnd_toEndOf="@+id/textView15"
             app:layout_constraintStart_toStartOf="@+id/textView15"

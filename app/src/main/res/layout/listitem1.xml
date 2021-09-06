@@ -7,7 +7,7 @@
         android:layout_marginHorizontal="@dimen/dimen_15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#f8f8f8"
+        android:backgroundTint="@color/white_2"
         app:cardElevation="0dp"
         app:cardCornerRadius="@dimen/dimen_13dp">
 
@@ -20,7 +20,7 @@
             android:paddingHorizontal="@dimen/dimen_15dp"
             android:fontFamily="@font/lato_regular"
             android:text="INDEX"
-            android:textColor="#fff"
+            android:textColor="@color/white"
             android:textSize="@dimen/dimen_12sp" />
     </androidx.cardview.widget.CardView>
 </LinearLayout>

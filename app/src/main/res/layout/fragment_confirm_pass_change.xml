@@ -59,7 +59,7 @@
         android:id="@+id/textView5"
         style="@style/font_raleway_black"
         android:text="TRADIX"
-        android:textColor="#2b2828"
+        android:textColor="@color/black_2"
         android:textSize="@dimen/dimen_40sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,7 +102,7 @@
         style="@style/font_raleway_black"
         android:gravity="center"
         android:text="Yay! Your password has been\nchanged!"
-        android:textColor="#656565"
+        android:textColor="@color/brownish_grey"
         android:textSize="@dimen/dimen_22sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,7 +122,7 @@
             android:layout_width="match_parent"
             style="@style/font_lato_black"
             android:text="LOGIN"
-            android:textColor="#fff"
+            android:textColor="@color/white"
             android:background="#e432c1"/>
     </androidx.cardview.widget.CardView>
 

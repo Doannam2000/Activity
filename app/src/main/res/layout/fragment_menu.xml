@@ -59,7 +59,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/customradius"
-        android:backgroundTint="#f8f8f8"
+        android:backgroundTint="@color/white_2"
         android:gravity="center"
         android:orientation="vertical"
         android:paddingLeft="@dimen/dimen_10dp"
