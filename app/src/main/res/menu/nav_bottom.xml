@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:ignore="MenuTitle">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/homeFragment"
+        android:title="home"
         android:checkable="true"
         android:checked="true"
         android:icon="@drawable/icons_8_increase"
-        android:menuCategory="secondary" />
+        android:menuCategory="secondary"/>
     <item
         android:id="@+id/coinFragment"
+        android:title="coin"
         android:icon="@drawable/icons_8_chart"
         android:menuCategory="secondary" />
     <item
         android:id="@+id/newsFragment"
+        android:title="news"
         android:icon="@drawable/icons_8_news"
         android:menuCategory="secondary"/>
     <item
+        android:title="menu"
         android:id="@+id/menuFragment"
         android:icon="@drawable/icons_8_customer"
         android:menuCategory="secondary" />

@@ -2,5 +2,8 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:drawable="@drawable/custom_item_selected"
-        android:state_selected="true"/>
+        android:layout_width="@dimen/dimen_5dp"
+        android:layout_height="@dimen/dimen_5dp"
+        android:state_selected="true">
+    </item>
 </selector>
