@@ -8,17 +8,14 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import dd.wan.activityfragnav.R
 import dd.wan.activityfragnav.model.color
-import dd.wan.activityfragnav.model.item
 
-class RecyclerAdapter1(var listItem: Array<String>,var color: color) :
-    RecyclerView.Adapter<RecyclerAdapter1.ViewHolder>() {
+class RecyclerAdapter1(var listItem: Array<String>,var color: color) : RecyclerView.Adapter<RecyclerAdapter1.ViewHolder>() {
     var itemSelected:Int = 0
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter1.ViewHolder {
         var view: View =
             LayoutInflater.from(parent.context).inflate(R.layout.listitem1, parent, false)
         return ViewHolder(view)
     }
-
     lateinit var itemClick: (position: Int) -> Unit
     fun setCallback(click: (position: Int) -> Unit) {
         itemClick = click

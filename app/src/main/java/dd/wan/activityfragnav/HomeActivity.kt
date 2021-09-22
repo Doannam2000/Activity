@@ -84,8 +84,6 @@ class HomeActivity : AppCompatActivity() {
                 dialog.dismiss()
                 super.onBackPressed()
             }
-
-
         } else {
             super.onBackPressed()
         }

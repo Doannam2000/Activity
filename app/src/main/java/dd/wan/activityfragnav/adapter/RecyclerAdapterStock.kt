@@ -47,7 +47,7 @@ class RecyclerAdapterStock(var list: ArrayList<Stock>) :
         var percent: TextView = itemView.findViewById(R.id.percent)
         var constraint: ConstraintLayout = itemView.findViewById(R.id.constraintStock)
         fun setData(item: Stock) {
-            name.text = item.name
+            name.text = item.name +" "+ adapterPosition
             location.text = item.location
             time.text = item.time
             rate.text = item.rate
